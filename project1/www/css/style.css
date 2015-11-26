@@ -1,0 +1,94 @@
+/* Empty. Add your own CSS if you like */
+#guide{
+    position: absolute;
+    left: 50%;
+    margin-left: -8rem;
+    width: 16rem;
+    height: 100%;
+    overflow: hidden;
+}
+#guide-arrow{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    margin-left: -90px;
+}
+#guide-arrow li{
+    float: left;
+    padding: 2px 12px;
+    margin-right: 15px;
+    background-color: #fafafa;
+    -webkit-transform:skew(-40deg,0deg);
+    transform:skew(-40deg,0deg);
+}
+#guide-arrow .active{
+    background-color: #a9a9a9;
+}
+#guide-wrapper{
+    width: 80rem;
+    height: 100%;
+    overflow: hidden;
+}
+#guide-wrapper div{
+    width: 16rem;
+    height: 100%;
+    float: left;
+}
+.guide-bg-a{
+    background: url(../img/guide/welcome-a.jpg) 0 0 no-repeat;
+    background-size: 16rem;
+    left: 16rem;
+}
+.guide-bg-b{
+    background: url(../img/guide/welcome-b.jpg) 0 0 no-repeat;
+    background-size: 16rem;
+    left: 32rem;
+}
+.guide-bg-c{
+    background: url(../img/guide/welcome-c.jpg) 0 0 no-repeat;
+    background-size: 16rem;
+    left: 48rem;
+}
+.guide-bg-d{
+    background: url(../img/guide/welcome-d.jpg) 0 0 no-repeat;
+    background-size: 16rem;
+    left: 64rem;
+}
+.guide-bg-e{
+    background: url(../img/guide/welcome-e.jpg) 0 0 no-repeat;
+    background-size: 16rem;
+    left: 80rem;
+}
+.guide-sure{
+    position: absolute;
+    width: 6rem;
+    height: 2rem;
+    background: url(../img/guide/guide-sure.png) 0 0 no-repeat;
+    background-size: 5.9rem 1.7rem;
+    bottom: 80px;
+    left: 50%;
+    margin-left: -3rem;
+}
+
+
+#btn-group{
+   margin-top: 10px;
+    height: auto;
+}
+
+#btn-group a{
+    border: 1px solid #e1e1e1;
+    float: left;
+    display: block;
+    position: relative;
+    text-align: center;
+    height:85px;
+    width: 50%;
+}
+#btn-group a img{
+    width: 40px;
+    height: 40px;
+    margin: 4px auto 0;
+    display: block;
+}
+

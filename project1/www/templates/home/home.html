@@ -1,0 +1,43 @@
+<ion-view view-title="赶集易洗车">
+    <ion-nav-bar class="bar-stable bar-positive">
+        <ion-nav-buttons side="left">
+            <select >
+                <option ng-repeat="item in places">{{item.place}}</option>
+            </select>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon icon ion-qr-scanner" ng-click="scan()"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+       <ion-refresher pulling-text="下拉刷新" pulling-icon="ion-ios-refresh-empty" spinner="ripple" on-refresh="doRefresh()" refreshing-text="正在刷新..." ></ion-refresher>
+
+        <ion-slide-box does-continue="true" auto-play="true" show-pager="true" slide-interval="3000">
+            <ion-slide>
+                <img src="img/home/a.jpg" style="width: 100%; height:150px;">
+            </ion-slide>
+            <ion-slide>
+               <img src="img/home/b.jpg" style="width: 100%; height:150px;">
+            </ion-slide>
+            <ion-slide>
+                <img src="img/home/c.jpg" style="width: 100%; height:150px;">
+            </ion-slide>
+            <ion-slide>
+                  <img src="img/home/d.jpg" style="width: 100%; height:150px;">
+            </ion-slide>
+        </ion-slide-box>
+        <div>
+             <img src="img/home/weather.jpg" style="margin-right: 10px">
+             <img src="img/home/xiadan.jpg" >
+        </div>
+        <div style=" border-top: 4px solid #e1e1e1;margin-top: 10px">
+            <section id="btn-group" ng-repeat="packageInfo in packageInfos">
+               <a href="#/tab/home/{{packageInfo.id}}">
+                   <img src="{{packageInfo.img}}" alt="">
+                   {{packageInfo.text}}
+               </a>
+           </section>
+        </div>
+        
+    </ion-content>
+</ion-view>

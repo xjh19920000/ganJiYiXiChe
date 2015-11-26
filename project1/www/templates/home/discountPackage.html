@@ -1,0 +1,22 @@
+<!--//优惠套餐界面-->
+
+<ion-view view-title="{{packageInfo.text}}" hide-tabs="true">
+    <ion-nav-bar class="bar-positive">
+         <ion-nav-back-button></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content >
+      <div ng-if="packageInfo.id==0">
+        <img src="img/home/a.jpg" width="100%" height="200px">
+        <div>
+            <p ><strong style="color: red;font-size: 25px">￥128</strong><i style="text-decoration: line-through"> 原价:289</i></p>
+            <input type="button" value="立即下单" style="background-color: green;padding: 10px " ng-click="goBuyNow()">
+        </div>
+         <div style="border-top:10px solid #e1e1e1;margin-top: 10px" >
+             <p style="padding: 10px"><strong>套餐内容</strong></p>
+         </div>
+         <div style="padding: 10px;border-top:1px solid #e1e1e1">
+             <img src="img/home/package.png" width="100%" height="auto">
+         </div>
+      </div>
+    </ion-content>
+</ion-view>
